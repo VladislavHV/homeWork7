@@ -93,8 +93,9 @@ public class Main {
         while (deposit2 <= 12_000_000) {
             deposit2 += deposit2 * contribution2;
             month2++;
-            if (month2 % 6 == 0)
-            System.out.println("Сумма накопления = " + deposit2 + ", за " + month2 + " месяц.");
+            if (month2 % 6 == 0) {
+                System.out.println("Сумма накопления = " + deposit2 + ", за " + month2 + " месяц.");
+            }
         }
 
         System.out.println("Задача №6");
@@ -130,9 +131,10 @@ public class Main {
          */
         int friday = 7;
         while (friday <= 31) {
-            if (friday % 7 == 0)
-            System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
-            friday++;
+            if (friday % 7 == 0) {
+                System.out.println("Сегодня пятница, " + friday + "-е число. Необходимо подготовить отчет");
+            }
+                friday+=7;
         }
 
         System.out.println("Задача №8");
@@ -150,14 +152,16 @@ public class Main {
         1975
         2054
          */
-        short comet = 1896;
-        short comet2 = 1975;
-        while (comet <= 2000) {
-            System.out.println(comet);
-            comet += 79;
+        //short comet = 1896;
+        //short comet2 = 1975;
+        short meteor = 0;
+        while (meteor <= 2024) {
+            meteor += 79;
+            if (meteor >= 1824) {
+                System.out.println(meteor);
+            } else if (meteor >= 2124) {
+                System.out.println(meteor);
+            }
         }
-        comet2 += 79;
-        System.out.println(comet2);
-
     }
 }
